@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.islamiccenter.abjad1.LoginAct">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:id="@+id/spScreen"
+        android:background="@drawable/splash" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:id="@+id/bgScreen"
+        android:background="@drawable/background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:id="@+id/blurScreen"
+        android:background="@drawable/blur_bg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:paddingHorizontal="25dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:alpha="0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/MainScreen">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/logo_final"
+            android:layout_gravity="center" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="البريد الالكتروني"
+            android:textColor="#ffffff"
+            android:id="@+id/emailTxt"
+            android:drawablePadding="5dp"
+            android:paddingHorizontal="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:drawableRight="@drawable/email"
+            android:textColorHint="#c1ffffff"
+            android:backgroundTint="#FFFfff"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTxt"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:drawablePadding="5dp"
+            android:lines="1"
+            android:hint="كلمة المرور"
+            android:textAlignment="viewEnd"
+            android:paddingHorizontal="10dp"
+            android:drawableRight="@drawable/lock"
+            android:layout_marginBottom="25dp"
+            android:textColorHint="#c1ffffff"
+            android:backgroundTint="#FFFfff"/>
+
+        <Button
+            android:id="@+id/logBtn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/zero_button"
+            android:text="الدخول"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fbBtn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/fb_login"
+            android:text="دخول عن طريق فيس بوك"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotPassTxt"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:text="نسيت كلمة المرور ؟"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/signUpTxt"
+            android:textColor="#FFFFFF"
+            android:text="التسجيل"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

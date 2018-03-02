@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/One">
+        <item
+            android:id="@+id/my_Courses"
+            android:title="دوراتي" />
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/Two">
+        <item
+            android:id="@+id/all_courses"
+            android:title="جميع الدورات" />
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/Three">
+        <item
+            android:id="@+id/my_Fav"
+            android:title="المفضلة" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+    android:id="@+id/Four">
+    <item
+        android:id="@+id/my_Acc"
+        android:title="الحساب" />
+    </group>
+
+    <group android:checkableBehavior="single"
+    android:id="@+id/Five">
+    <item
+        android:id="@+id/send_Notes"
+        android:title="ارسل ملاحظاتك" />
+
+</group>
+
+
+</menu>
